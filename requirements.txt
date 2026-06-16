@@ -1,0 +1,5 @@
+Python
+Streamlit
+Pandas
+Pickle
+Machine Learning
