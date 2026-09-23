@@ -22,6 +22,7 @@ The Loan Approval Prediction System helps financial institutions and users estim
 - **Python**
 - **Streamlit**
 - **Pandas**
+- **numpy**
 - **Pickle**
 - **Machine Learning**
 
