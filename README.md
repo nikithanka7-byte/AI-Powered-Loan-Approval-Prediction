@@ -1,23 +1,23 @@
-# 🏦 AI-Powered Loan Approval Prediction
+#  AI-Powered Loan Approval Prediction
 
 An AI-based web application that predicts whether a loan application is likely to be **Approved** or **Rejected** using Machine Learning. The application is built with **Python**, **Streamlit**,  providing a simple and interactive interface for users.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The Loan Approval Prediction System helps financial institutions and users estimate loan approval outcomes based on applicant information. The model is trained on historical loan data and uses machine learning to make predictions.
 
-### ✨ Features
-- 📊 User-friendly Streamlit web interface
-- 🤖 Machine Learning-based loan approval prediction
-- 📈 Input parameters using sliders and dropdown menus
-- ⚡ Instant prediction results
-- 💾 Pre-trained model (`model.pkl`) and scaler (`scaler.pkl`)
+###  Features
+-  User-friendly Streamlit web interface
+-  Machine Learning-based loan approval prediction
+-  Input parameters using sliders and dropdown menus
+-  Instant prediction results
+-  Pre-trained model (`model.pkl`) and scaler (`scaler.pkl`)
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Python**
 - **Streamlit**
@@ -27,7 +27,7 @@ The Loan Approval Prediction System helps financial institutions and users estim
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 AI-Powered-Loan-Approval-Prediction/
@@ -43,16 +43,16 @@ AI-Powered-Loan-Approval-Prediction/
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
-### 1️⃣ Clone the Repository
+### 1️ Clone the Repository
 
 ```bash
 git clone https://github.com/nikithanka7-byte/AI-Powered-Loan-Approval-Prediction.git
 cd AI-Powered-Loan-Approval-Prediction
 ```
 
-## 📋 Input Features
+##  Input Features
 
 The model predicts loan approval based on the following inputs:
 
@@ -69,10 +69,10 @@ The model predicts loan approval based on the following inputs:
 
 ---
 
-## 🎯 Prediction Output
+##  Prediction Output
 
-- ✅ **Loan Approved**
-- ❌ **Loan Rejected**
+-  **Loan Approved**
+-  **Loan Rejected**
 
 The prediction is generated using the trained machine learning model after preprocessing the input data with the saved scaler.
 
@@ -96,18 +96,18 @@ https://github.com/user-attachments/assets/d9b79d85-738b-42ca-b24c-a3b01d8558e9
 
 ---
 
-## 🌍 Live Demo
-**🔗 Live App:** https://4harpm83fe.preview.c40.airoapp.ai/?airoShareToken=2P9TpqmSgud0
+##  Live Demo
+** Live App:** https://4harpm83fe.preview.c40.airoapp.ai/?airoShareToken=2P9TpqmSgud0
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The project uses a loan approval dataset containing applicant details and loan status information. The data is preprocessed and used to train a classification model.
 
 
 
-## 👨‍💻 Author
+##  Author
 
 **R. Nikitha**
 
