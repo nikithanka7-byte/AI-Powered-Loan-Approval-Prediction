@@ -1,5 +1,4 @@
-Python
-Streamlit
-Pandas
-Pickle
-Machine Learning
+streamlit
+pandas
+numpy
+scikit-learn
