@@ -1,30 +1,51 @@
 #  AI-Powered Loan Approval Prediction
 
-An AI-based web application that predicts whether a loan application is likely to be **Approved** or **Rejected** using Machine Learning. The application is built with **Python**, **Streamlit**,  providing a simple and interactive interface for users.
+A Streamlit web app that predicts whether a loan application will be **Approved** or **Rejected** using a Random Forest classifier.
 
 ---
 
-##  Project Overview
+##  Features
 
-The Loan Approval Prediction System helps financial institutions and users estimate loan approval outcomes based on applicant information. The model is trained on historical loan data and uses machine learning to make predictions.
-
-###  Features
--  User-friendly Streamlit web interface
--  Machine Learning-based loan approval prediction
--  Input parameters using sliders and dropdown menus
--  Instant prediction results
--  Pre-trained model (`model.pkl`) and scaler (`scaler.pkl`)
+- Simple Streamlit interface with sliders and dropdowns
+- Instant prediction with confidence score
+- Pre-trained model (`model.pkl`) and scaler (`scaler.pkl`)
+- Auto-retrains from the dataset if the saved model can't be loaded
 
 ---
 
-##  Technologies Used
+##  Tech Stack
 
-- **Python**
-- **Streamlit**
-- **Pandas**
-- **numpy**
-- **Pickle**
-- **Machine Learning**
+- Python
+- Streamlit
+- Pandas, NumPy
+- scikit-learn (`RandomForestClassifier`, `StandardScaler`)
+
+---
+
+##  Model
+
+| Item | Details |
+|------|---------|
+| Algorithm | Random Forest Classifier (100 trees, `random_state=42`) |
+| Preprocessing | `StandardScaler` |
+| Dataset | 4,269 loan applications |
+| Split | 80% train / 20% test |
+| Test accuracy | **97.5%** |
+
+---
+
+##  Input Features
+
+| Feature | Description |
+|---------|-------------|
+| Number of Dependents | Total dependents of the applicant |
+| Education | Graduated / Not Graduated |
+| Self Employed | Yes / No |
+| Annual Income | Applicant's yearly income |
+| Loan Amount | Requested loan amount |
+| Loan Duration | Loan term in years |
+| CIBIL Score | Credit score (300–900) |
+| Total Assets | Combined residential, commercial, luxury and bank assets |
 
 ---
 
@@ -32,63 +53,37 @@ The Loan Approval Prediction System helps financial institutions and users estim
 
 ```
 AI-Powered-Loan-Approval-Prediction/
-│
-├── app.py                         # Streamlit web application
-├── model.pkl                      # Trained machine learning model
-├── scaler.pkl                     # Data scaler
-├── loan_approval_dataset.csv      # Dataset used for training
-├── Loan_Approval_Prediction.ipynb # Jupyter Notebook for model development
-├── requirements.txt               # Project dependencies
-└── README.md                      # Project documentation
+├── app.py                          # Streamlit application
+├── model.pkl                       # Trained Random Forest model
+├── scaler.pkl                      # Fitted StandardScaler
+├── loan_approval_dataset.csv       # Training dataset
+├── Loan_Approval_Prediction.ipynb  # Model development notebook
+├── requirements.txt                # Dependencies
+└── README.md
 ```
 
 ---
 
-##  How to Run the Project
 
-### 1️ Clone the Repository
-
-```bash
-git clone https://github.com/nikithanka7-byte/AI-Powered-Loan-Approval-Prediction.git
-cd AI-Powered-Loan-Approval-Prediction
-```
-
-##  Input Features
-
-The model predicts loan approval based on the following inputs:
-
-| Feature | Description |
-|----------|-------------|
-| Number of Dependents | Total dependents of the applicant |
-| Education | Graduated / Not Graduated |
-| Self Employed | Yes / No |
-| Annual Income | Applicant's annual income |
-| Loan Amount | Requested loan amount |
-| Loan Duration | Loan term in years |
-| CIBIL Score | Applicant's credit score |
-| Total Assets | Total value of applicant's assets |
 
 ---
 
-##  Prediction Output
-
--  **Loan Approved**
--  **Loan Rejected**
-
-The prediction is generated using the trained machine learning model after preprocessing the input data with the saved scaler.
-
----
-
-## 📸 Application Preview
+##  Application Preview
 
 
-https://github.com/user-attachments/assets/d9b79d85-738b-42ca-b24c-a3b01d8558e9
+https://github.com/user-attachments/assets/4d790a70-e7f5-448d-8ab5-3032967c13ea
 
-<img width="1920" height="1080" alt="Screenshot (935)" src="https://github.com/user-attachments/assets/41a23cd4-e2f2-4679-a90c-78c2e433bfe4" />
-<img width="1920" height="1080" alt="Screenshot (936)" src="https://github.com/user-attachments/assets/1e771807-9fab-47cf-82f6-a444195746ad" />
-<img width="1920" height="1080" alt="Screenshot (937)" src="https://github.com/user-attachments/assets/205ce575-fcd5-4f30-98d2-9dffe7e39bdc" />
-<img width="1920" height="1080" alt="Screenshot (938)" src="https://github.com/user-attachments/assets/6da4f9e2-2ff7-468c-aff8-42d1a8bc3554" />
-<img width="1920" height="1080" alt="Screenshot (939)" src="https://github.com/user-attachments/assets/06de9dac-bb86-43da-9cfa-e6183baa5db0" />
+
+
+<img width="1362" height="639" alt="image" src="https://github.com/user-attachments/assets/75b3da85-3f31-4dc5-adfb-8fe66caec3fb" />
+<img width="1366" height="633" alt="image" src="https://github.com/user-attachments/assets/5f281508-aa77-4b06-86d4-334265d59f89" />
+<img width="1365" height="624" alt="image" src="https://github.com/user-attachments/assets/5bc934a5-c591-4662-b8c6-2019a5007da6" />
+<img width="1351" height="627" alt="image" src="https://github.com/user-attachments/assets/b84886d7-465e-4bb7-9f6e-095d65f47f7a" />
+<img width="1332" height="561" alt="image" src="https://github.com/user-attachments/assets/d8e018b9-c379-4358-a815-b747eff6048f" />
+
+
+
+
 
 
 
@@ -98,21 +93,11 @@ https://github.com/user-attachments/assets/d9b79d85-738b-42ca-b24c-a3b01d8558e9
 ---
 
 ##  Live Demo
-** Live App:** https://4harpm83fe.preview.c40.airoapp.ai/?airoShareToken=2P9TpqmSgud0
+
+**Live App:** https://ai-powered-loan-approval-prediction-pgeebgxdnxvdyqzqcaqhuk.streamlit.app/
 
 ---
-
-##  Dataset
-
-The project uses a loan approval dataset containing applicant details and loan status information. The data is preprocessed and used to train a classification model.
-
-
 
 ##  Author
 
 **R. Nikitha**
-
-
-
-
-
